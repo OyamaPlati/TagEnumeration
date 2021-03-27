@@ -4,5 +4,7 @@ tagEnumeration.o: tagEnumeration.cpp
 	g++ -c tagEnumeration.cpp -o tagEnumeration.o -std=c++2a
 driver.o: driver.cpp
 	g++ -c driver.cpp -o driver.o -std=c++2a
+run:
+	./driver.exe $(argument)
 clean:
 	rm *.o driver.exe 
