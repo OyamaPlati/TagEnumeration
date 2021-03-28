@@ -44,6 +44,7 @@ std :: vector<pltoya001 :: TagStruct> pltoya001 :: openFile (char* name) {
 	return temp_arr;
 }
 
+// @reference : noobtuts.com/cpp/index-of-strings
 int pltoya001 :: indexOf (std :: string& text, std :: string& pattern) {
 	// where appears the pattern in the text
 	std :: string :: size_type location  = text.find(pattern, 0);
