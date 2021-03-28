@@ -11,6 +11,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 namespace pltoya001 {
 	struct TagStruct {
@@ -19,8 +20,10 @@ namespace pltoya001 {
 		std :: string text;
 	};
 
-	void openFile (char* name, std :: vector<TagStruct> tagStruct);
+	std :: vector<TagStruct> openFile (char* name);
 	int indexOf (std :: string& text, std :: string& pattern);
+	std :: string myToString (TagStruct tagData);
+	void printAll (const std :: vector<TagStruct>& tagStruct);
 }
 
 #endif
